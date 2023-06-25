@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const connectDb = require("./config/config");
-const itemModel = require("./models/itemModel");
-const items = require("./utils/data");
+const itemModel = require("./models/itemModels");
+const items = require("./utills/data");
 require("colors");
 //config
 dotenv.config();
