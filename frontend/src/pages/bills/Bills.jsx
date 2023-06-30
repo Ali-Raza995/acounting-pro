@@ -34,6 +34,8 @@ const Bills = () => {
     }
   };
 
+  console.log("billsData", billsData)
+
   useEffect(() => {
       getAllBills();
   }, []);

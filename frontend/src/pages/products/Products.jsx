@@ -19,6 +19,7 @@ const Products = () => {
         type: "SHOW_LOADING",
       });
       const {data} = await axios.get('/api/products/getproducts');
+      console.log('data', data)
       setProductData(data);
       dispatch({
         type: "HIDE_LOADING",
@@ -32,6 +33,9 @@ const Products = () => {
       console.log(error);
     }
   };
+
+  console.log('productData', productData)
+
 
   useEffect(() => {
       getAllProducts();
@@ -87,7 +91,7 @@ const Products = () => {
   ]
 
   const handlerSubmit = async (value) => {
-    //console.log(value);
+    console.log(value);
     if(editProduct === null) {
       try {
         dispatch({
@@ -132,6 +136,7 @@ const Products = () => {
       }
     }
   }
+  console.log("editProduct", editProduct)
 
   return (
     <LayoutApp>
@@ -141,7 +146,7 @@ const Products = () => {
       
       {
         popModal && 
-        <Modal title={`${editProduct !== null ? "Edit Product" : "Add New Product"}`} visible={popModal} onCancel={() => {setEditProduct(null); setPopModal(false);}} footer={false}>
+        <Modal title={`${editProduct ? "Edit Product" : "Add New Product"}`} visible={popModal} onCancel={() => {setEditProduct(null); setPopModal(false);}} footer={false}>
           <Form layout='vertical' initialValues={editProduct} onFinish={handlerSubmit}>
             <FormItem name="name" label="Name">
               <Input/>
@@ -160,12 +165,11 @@ const Products = () => {
               <Input/>
             </FormItem>
             <div className="form-btn-add">
-              <Button htmlType='submit' className='add-new'>Add</Button>
+              <Button htmlType='submit' className='add-new'>{editProduct ? 'Update Product' : "Add"}</Button>
             </div>
           </Form>
         </Modal>
       }
-
     </LayoutApp>
   )
 }
