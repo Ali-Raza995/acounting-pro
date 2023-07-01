@@ -31,7 +31,7 @@ export const registerController = async (req, res) => {
         res.status(200).send("New User Added Successfully!");
 
     } catch(error) {
-        console.log(error);
+        console.log(error)
     }
 
 }

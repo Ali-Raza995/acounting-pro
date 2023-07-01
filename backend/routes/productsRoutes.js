@@ -8,4 +8,4 @@ productRouter.post("/addproducts", addProductController);
 productRouter.put("/updateproducts", updateProductController);
 productRouter.post("/deleteproducts", deleteProductController);
 
-export default productRouter;
+export default productRouter

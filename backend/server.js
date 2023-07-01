@@ -34,7 +34,7 @@ app.use('/api/users/', userRouter);
 app.use('/api/bills/', billsRouter);
 
 //Create Port 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000
 
 //Listen
 app.listen(PORT, () => {

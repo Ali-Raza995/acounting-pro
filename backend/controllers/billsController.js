@@ -22,7 +22,7 @@ export const addBillsController = async (req, res) => {
         res.send("Bill Created Successfully!");
 
     } catch(error) {
-        console.log(error);
+        console.log(error)
     }
 
 }

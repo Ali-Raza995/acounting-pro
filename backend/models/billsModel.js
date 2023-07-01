@@ -18,4 +18,4 @@ const billsSchema = new mongoose.Schema({
 });
 
 const Bills = mongoose.model("Bills", billsSchema);
-export default Bills;
+export default Bills

@@ -35,7 +35,7 @@ export const updateProductController = async (req, res) => {
         res.status(201).json("Product Updated!");
     } catch(error) {
         res.status(400).send(error);
-        console.log(error);
+        console.log(error)
     }
 }
 
@@ -47,6 +47,6 @@ export const deleteProductController = async (req, res) => {
         res.status(200).json("Product Deleted!");
     } catch(error) {
         res.status(400).send(error);
-        console.log(error);
+        console.log(error)
     }
 }

@@ -7,4 +7,4 @@ billsRouter.post("/addbills", addBillsController);
 
 billsRouter.get("/getbills", getBillsController);
 
-export default billsRouter;
+export default billsRouter
