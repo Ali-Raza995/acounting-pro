@@ -43,10 +43,13 @@ const Login = () => {
   }, [navigate]);
 
   return (
-    <div className='form'>
-        <h2>Acounting POS</h2>
-        <p>Login</p>
-        <div className="form-group">
+    <div className='form' style={{backgroundColor:'blue'}}>
+   
+    
+        <h2 style={{color:'white'}}>Acounting POS</h2>
+        <p style={{color:'white'}}>Login</p>
+   
+        <div className="form-group" style={{backgroundColor:'white'}}>
           <Form layout='vertical' onFinish={handlerSubmit}>
             <FormItem name="userId" label="User ID">
               <Input/>
