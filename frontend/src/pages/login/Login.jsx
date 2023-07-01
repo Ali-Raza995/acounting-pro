@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <div className='form'>
-        <h2>MP POS</h2>
+        <h2>Acounting POS</h2>
         <p>Login</p>
         <div className="form-group">
           <Form layout='vertical' onFinish={handlerSubmit}>

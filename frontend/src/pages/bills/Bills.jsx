@@ -97,9 +97,9 @@ const Bills = () => {
         <Modal title="Invoice Details" width={400} pagination={false} visible={popModal} onCancel={() => setPopModal(false)} footer={false}>
           <div className="card" ref={componentRef}>
             <div className="cardHeader">
-                <h2 className="logo">MP POS</h2>
-                <span>Number: <b>+381/0000000</b></span>
-                <span>Address: <b>34000 Kragujevac, Serbia</b></span>
+                <h2 className="logo">Acounting POS</h2>
+                <span>Number: <b>+3423229233</b></span>
+                <span>Address: <b>34000 Karachi, Pakistan</b></span>
             </div>
             <div className="cardBody">
                 <div className="group">

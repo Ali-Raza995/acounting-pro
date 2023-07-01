@@ -35,7 +35,7 @@ const LayoutApp = ({children}) => {
       {loading && <Spinner />}
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
-            <h2 className="logo-title">MP POS</h2>
+            <h2 className="logo-title">Acounting POS</h2>
         </div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={window.location.pathname}>
             <Menu.Item key='/' icon={<HomeOutlined />}>
