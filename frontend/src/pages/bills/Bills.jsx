@@ -20,6 +20,7 @@ const Bills = () => {
         type: "SHOW_LOADING",
       });
       const {data} = await axios.get('/api/bills/getbills');
+      console.log('BillsDara', data)
       setBillsData(data);
       dispatch({
         type: "HIDE_LOADING",
@@ -86,6 +87,7 @@ const Bills = () => {
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
+
 
   return (
     <Layout>

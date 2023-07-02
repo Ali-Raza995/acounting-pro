@@ -50,6 +50,12 @@ const LayoutApp = ({children}) => {
             <Menu.Item key='/customers' icon={<UserSwitchOutlined />}>
                 <Link to="/customers">Customers</Link>
             </Menu.Item>
+            <Menu.Item key='/salesperday' icon={<UserSwitchOutlined />}>
+                <Link to="/salesperday">Sales Per Day</Link>
+            </Menu.Item>
+            <Menu.Item key='/salesmonthly' icon={<UserSwitchOutlined />}>
+                <Link to="/salesmonthly">Sales Monthly</Link>
+            </Menu.Item>
             <Menu.Item key='/logout' icon={<LogoutOutlined />} onClick={() => {localStorage.removeItem("auth"); navigate("/login");}}>
                 LogOut
             </Menu.Item>

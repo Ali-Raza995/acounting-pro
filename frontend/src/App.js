@@ -8,6 +8,8 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Bills from './pages/bills/Bills';
 import Customers from './pages/customers/Customers';
+import SalesPerDay from './pages/sales-per-day/sales-per-day';
+import SalesMonthly from './pages/sales-monthly/sales-monthly';
 
 function App() {
   return (
@@ -37,6 +39,16 @@ function App() {
             <Route path="/customers" element={
             <ProtectedRouter>
               <Customers />
+            </ProtectedRouter>
+            } />
+             <Route path="/salesperday" element={
+            <ProtectedRouter>
+              <SalesPerDay />
+            </ProtectedRouter>
+            } />
+             <Route path="/salesmonthly" element={
+            <ProtectedRouter>
+              <SalesMonthly />
             </ProtectedRouter>
             } />
           <Route path="/login" element={<Login />} />
