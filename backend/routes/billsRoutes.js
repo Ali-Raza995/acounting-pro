@@ -1,10 +1,10 @@
-import express from "express";
-import { addBillsController, getBillsController } from "../controllers/billsController.js";
+import express from "express"
+import { addBillsController, getBillsController } from "../controllers/billsController.js"
 
-const billsRouter = express.Router();
+const billsRouter = express.Router()
 
-billsRouter.post("/addbills", addBillsController);
+billsRouter.post("/addbills", addBillsController)
 
-billsRouter.get("/getbills", getBillsController);
+billsRouter.get("/getbills", getBillsController)
 
-export default billsRouter
+export default billsRouter;
