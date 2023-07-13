@@ -32,6 +32,7 @@ app.use(morgan("dev"));
 app.use('/api/products/', productRouter);
 app.use('/api/users/', userRouter);
 app.use('/api/bills/', billsRouter);
+app.use('/api/sales/', billsRouter);
 
 //Create Port 
 const PORT = process.env.PORT || 5000

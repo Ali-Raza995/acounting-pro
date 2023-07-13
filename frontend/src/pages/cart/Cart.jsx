@@ -6,7 +6,6 @@ import { Button, Form, Input, message, Modal, Select, Table } from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 const Cart = () => {
 
     const [subTotal, setSubTotal] = useState(0);
@@ -74,7 +73,6 @@ const Cart = () => {
     ]
 
     useEffect(() => {
-
         let temp = 0;
         cartItems.forEach((product) => (temp = temp + product.price * product.quantity));
         setSubTotal(temp); 

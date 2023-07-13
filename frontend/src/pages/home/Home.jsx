@@ -10,6 +10,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const [productData, setProductData] = useState([]);
+  console.log('object', productData)
   const [selectedCategory, setSelectedCategory] = useState('pizzas');
   const categories = [
     {
@@ -26,7 +27,6 @@ const Home = () => {
     },
 
   ]
-
   useEffect(() => {
     const getAllProducts = async () => {
         try {
@@ -48,7 +48,6 @@ const Home = () => {
       getAllProducts();
   }, [dispatch]);
   
-
   return (
     <LayoutApp>
       <div className="category">
@@ -69,5 +68,4 @@ const Home = () => {
     </LayoutApp>
   )
 }
-
 export default Home

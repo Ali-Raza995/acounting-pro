@@ -13,6 +13,7 @@ const Product = ({product}) => {
   }
 
     const { Meta } = Card;
+    console.log('avvv======', product.image)
 
   return (
     <Card
